@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://sqak6m27ymal"]
+
+[ext_resource type="Texture2D" uid="uid://c2mpxtnv0d7vq" path="res://sprites/Screenshot 2024-10-09 171147.png" id="1_2q6dc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w7c3h"]
+size = Vector2(712, 20)
+
+[node name="Level" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(346, 0)
+shape = SubResource("RectangleShape2D_w7c3h")
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(344, 1.19209e-07)
+scale = Vector2(3.98045, 0.294521)
+texture = ExtResource("1_2q6dc")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+position = Vector2(35.9294, -327.578)
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_w7c3h")
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D2"]
+position = Vector2(32, -325)
+rotation = 1.5708
+scale = Vector2(3.98045, 0.294521)
+texture = ExtResource("1_2q6dc")
